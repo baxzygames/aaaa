@@ -92,9 +92,9 @@
         console.error(err);
       }
     }
-    let points = storedPoints !== null ? parseInt(storedPoints) : 100;
+    points = storedPoints !== null ? parseInt(storedPoints) : 100;
     
-    let claimed = JSON.parse(localStorage.getItem('premios-reclamados') || '[]');
+    claimed = JSON.parse(localStorage.getItem('premios-reclamados') || '[]');
 
     
     const rewards = [
